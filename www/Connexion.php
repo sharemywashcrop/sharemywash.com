@@ -29,6 +29,7 @@ namespace
             try{
                 $newConnexion = new PDO("mysql:host=$newServer;dbname=$newdbName",$newLogin,$newPass);
                 $newConnexion -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                echo "ok";
                 $this ->connexion = $newConnexion;
             }
             catch(PDOException $e)
@@ -67,34 +68,19 @@ namespace
             }
         }
 
-        public function addUser($name,$email,$location,$current,$dryer,$wMachine){
-            $connexion = $this -> $connexion;
-            $requete = $connexion->prepare("INSERT INTO 'sharemywash'.'USERS'('Name', 'Email', 'Location', 'CurrentLaudry', 'Dryer', 'WMachine') VALUES(':name', ':email', ':location', ':current', ':dryer', ':wMachine')");
-            $requete-> bindParam(':name',$name);
-            $requete-> bindParam(':email',$email);
-            $requete-> bindParam(':loacation',$location);
-            $requete-> bindParam(':current',$current);
-            $requete-> bindParam(':dryer',$dryer);
-            $requete-> bindParam(':wMachine',$wMachine);
-
-            $requete -> execute();
+        public function add($name,$email,$location,$current,$dryer,$wMachine){
+            $this -> $codeSQL = "INSERT INTO 'sharemywash'.'USERS'('Name', 'Email', 'Location', 'CurrentLaudry', 'Dryer', 'WMachine') VALUES('$name', '$email', '$location', '$current', '$dryer', '$wMachine');";
+            $req = mysql_query($this->$codeSQL);
         }
 
-        public function upDateUser($name,$cln,$var){
-            $connexion = $this -> $connexion;
-            $requete = $connexion -> prepare("UPDATE USERS FROM USERS SET :cln = :var WHERE Name = :name");
-            $requete -> bindParam(':cln',$cln);
-            $requete -> bindParam(':var',$var);
-            $requete -> bindParam(':name',$name);
-            $requete -> execute();
+        public function upDate($name,$cln,$var){
+            $this -> $codeSQL = "UPDATE USERS FROM USERS SET ".$cln." = ".$var." WHERE Name = ".$name.";";
+            $req = mysql_query($this->$codeSQL);
         }
 
-        public function deleteUser($cln,$var){
-            $connexion = $this -> $connexion;
-            $requete = $connexion -> prepare("DELETE FROM USERS WHERE :cln = :var");
-            $requete -> bindParam(':cln',$cln);
-            $requete -> bindParam(':var',$var);
-            $requete -> execute();
+        public function delete($cln,$var){
+            $this -> $codeSQL = "DELETE FROM USERS WHERE ".$cln." = ".$var.";";
+            $req = mysql_query($this->$codeSQL);
         }
 
         public function setCodeSQL($newCodeSQL){
