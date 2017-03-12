@@ -74,7 +74,7 @@ header( 'content-type: text/html; charset=utf-8' );
                 <div></div>
                 <p>
 		First, you have to register with a username and a password. Secondly, you will have to update your location, so that we will be able to propose you the closest laundry.<br />
-		Then, when you will need to do your laundry, you will be able to check the requests of other users, and see if someone wants to share his washing machine. If unfortunately there are not, no problem! We have the solution!<br />
+		Then, when you will need to do the laundry, you will be able to check the requests of other users, and see if someone wants to share his washing machine. If unfortunately there are not, no problem! We have the solution!<br />
 You just have to create a new request, with the location of your favourite laundry, the remaining place in the washing machine, and of course, which washing machine you will use!<br />
                 </p>
 

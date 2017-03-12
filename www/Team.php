@@ -51,7 +51,7 @@ header( 'content-type: text/html; charset=utf-8' );
 
                 <div></div>
                 <p>
-		The team behind this project is composed of three computer engineering student. We have made this project during the hack@brookes hackathon, are we are proud to present you what we have done so far. We hope that it will be helpful for you when doing your laundry.<br />
+		The team behind this project is composed of three computer engineering students. We have made this project during the hack@brookes hackathon, are we are proud to present you what we have done so far. We hope that it will be helpful for you when doing the laundry.<br />
                 </p>
 
             </div>
