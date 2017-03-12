@@ -45,7 +45,7 @@ if (isset($_REQUEST['name']) && $_REQUEST['name'] != "" && isset($_REQUEST['emai
     $req = mysql_query($codeSQL);
 ?>
 <script>
-    alert("Annonce créée");
+    alert("Done");
 </script>
 <meta http-equiv="refresh" content="0; URL=admin_mod.php" />
 <?php
@@ -56,17 +56,17 @@ if (isset($_REQUEST['name']) && $_REQUEST['name'] != "" && isset($_REQUEST['emai
 <section id="register" class="wrapper">
     <div class="container">
         <header id="register" class="major special">
-            <h2>Add a laundry</h2>
+            <h2>Add a User</h2>
             <p>Enter information here</p>
         </header>
 
         <form method="post" width="404" height="219" border="15" align="left">
                 <input type="text" name="name" placeholder="Name"/>
-                <input type="text" name="email" placeholder="email" />
-                <input type="text" name="location" placeholder="location" />
-                <input type="text" name="current" placeholder="current" />
-                <input type="number" name="dryer" placeholder="dryer" />
-                <input type="number" name="wmachine" placeholder="Wash Machine"/>*
+                <input type="text" name="email" placeholder="Email" />
+                <input type="text" name="location" placeholder="Current Location" />
+                <input type="text" name="current" placeholder="Current Wash Machine" />
+                <input type="number" name="dryer" placeholder="Number of dryer" />
+                <input type="number" name="wmachine" placeholder="Number of Washing Machines"/>*
                 <input type="submit" value="Add" />
             
         </form>

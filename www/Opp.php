@@ -21,7 +21,7 @@ namespace{
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         public function addDMachines($belong,$available,$capacity,$space){
-            $codeSQL = "INSERT INTO `sharemywash`.`DMACHINES` (`id`, `Belong`, `Capacity`, `Space`) VALUES (NULL, `$belong`, `$available`, `$capacity`, `$space`);";
+            $codeSQL = "INSERT INTO `sharemywash`.`DMACHINES` (`id`, `Belong`, `Capacity`, `Space`) VALUES (NULL, '$belong', '$available', '$capacity', '$space');";
             $req = mysql_query($codeSQL);
         }
 
@@ -31,13 +31,13 @@ namespace{
         }
 
         public function deleteDMachine($cln,$var){
-            $codeSQL = "DELETE FROM `sharemywash`.`DMACHINES` WHERE `$cln` = `$var`;";
+            $codeSQL = "DELETE FROM `sharemywash`.`DMACHINES` WHERE `$cln` = '$var';";
             $req = mysql_query($codeSQL);
         }
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-        public function addWMachines($belong,$available,$capacity,$space){
-            $codeSQL = "INSERT INTO `sharemywash`.`WMACHINES` (`id`, `Belong`, `Capacity`, `Space`) VALUES (NULL, `$belong`, `$available`, `$capacity`, `$space`);";
+        public function addDMachinesaddDMachines($belong,$available,$capacity,$space){
+            $codeSQL = "INSERT INTO `sharemywash`.`WMACHINES` (`id`, `Belong`, `Capacity`, `Space`) VALUES (NULL, '$belong', '$available', '$capacity', '$space');";
             $req = mysql_query($codeSQL);
         }
 
@@ -53,7 +53,7 @@ namespace{
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         public function addLaudry($location){
-            $codeSQL = "INSERT INTO `sharemywash`.`Laudry` (`id`, `Location`) VALUES (NULL, `$location`);";
+            $codeSQL = "INSERT INTO `sharemywash`.`Laudry` (`id`, `Location`) VALUES (NULL, '$location');";
             $req = mysql_query($codeSQL);
         }
 

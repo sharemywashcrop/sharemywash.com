@@ -38,6 +38,10 @@ header( 'content-type: text/html; charset=utf-8' );
 
     <section id="banner">
 
+        <h2>Share My Wash 2</h2>
+
+        <p></p>
+        <p>by Ultra Team</p>
     </section>
     
         <style>
