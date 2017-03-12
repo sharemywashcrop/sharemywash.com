@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <?php
 header( 'content-type: text/html; charset=utf-8' );
-include("Connexion.php");
 ?>
 <html>
 <head>
@@ -23,10 +22,10 @@ include("Connexion.php");
     </noscript>
 </head>
 <body class="landing">
-    
+
     <!-- Header -->
     <header id="header" class="alt">
-        
+
         <h1>
             <strong>
                 <a href="index.php">Share My Wash</a>
@@ -35,8 +34,18 @@ include("Connexion.php");
         <?php include"Table.php"?>
     </header>
 
+    <!-- Banner -->
 
-    <section>
+    <section id="banner">
+
+        <h2>Share My Wash 2</h2>
+
+        <p></p>
+        <p>by Ultra Team</p>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style1">
         <style>
             body {
                 margin: 0;
@@ -45,64 +54,71 @@ include("Connexion.php");
 
             #map {
                 position: page;
-                top: 0;
-                bottom: 0;
-                height: 0;
                 width: 100%;
             }
         </style>
         <div class="container 75%">
             <div class="row 200%">
+                <div class="6u 12u$(medium)">
+                    <header class="major">
+                        <h2>Share My Wash</h2>
+                        <p>A good way to wash his laundry</p>
+                    </header>
+                </div>
                 <div id="map" class="6u$ 12u$(medium)">
 
 
 
                     <div>
                         <script>
-                            mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
-                            var map = new mapboxgl.Map({
-                                container: 'map',
-                                style: 'mapbox://styles/mapbox/streets-v9',
-                                center: [-1.224972, 51.754297],
-                                zoom: 12
-                            });
+                mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v9',
+                    center: [-1.224972, 51.754297],
+                    zoom: 12
+                });
 
-                            var radius = 20;
+                var radius = 20;
 
-                            function pointOnCircle() {
-                                return {
-                                    "type": "Point",
-                                    "coordinates": [
-                                     -1.224972,
-                                     51.754297
-                                    ]
-                                };
-                            }
+                function pointOnCircle() {
+                    return {
+                        "type": "Point",
+                        "coordinates": [
+                         -1.224972,
+                         51.754297
+                        ]
+                    };
+                }
 
-                            map.on('load', function () {
+                map.on('load', function () {
 
-                                map.addSource('point', {
-                                    "type": "geojson",
-                                    "data": pointOnCircle()
-                                });
+                    map.addSource('point', {
+                        "type": "geojson",
+                        "data": pointOnCircle()
+                    });
 
-                                map.addLayer({
-                                    "id": "point",
-                                    "source": "point",
-                                    "type": "circle",
-                                    "paint": {
-                                        "circle-radius": 5,
-                                        "circle-color": "#ff0000"
-                                    }
-                                });
-                            });
+                    map.addLayer({
+                        "id": "point",
+                        "source": "point",
+                        "type": "circle",
+                        "paint": {
+                            "circle-radius": 5,
+                            "circle-color": "#ff0000"
+                        }
+                    });
+                });
                         </script>
                     </div>
+                    <p>
+                        Bla bla bla
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-                        <!-- Footer -->
-                        <?php include"Foot.php" ?>
+ 
+    <!-- Footer -->
+    <?php include"Foot.php" ?>
 </body>
 </html>
