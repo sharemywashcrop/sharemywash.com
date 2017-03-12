@@ -21,7 +21,7 @@ namespace{
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         public function addDMachines($belong,$available,$capacity,$space){
-            $codeSQL = "INSERT INTO `sharemywash`.`DMACHINES` (`id`, `Belong`, `Capacity`, `Space`) VALUES (NULL, '$belong', '$available', '$capacity', '$space');";
+            $codeSQL = "INSERT INTO `sharemywash`.`DMACHINES` (`id`, `Belong`, `Available`, `Capacity`, `Space`) VALUES (NULL, '$belong', '$available', '$capacity', '$space');";
             $req = mysql_query($codeSQL);
         }
 
@@ -36,8 +36,8 @@ namespace{
         }
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-        public function addDMachinesaddDMachines($belong,$available,$capacity,$space){
-            $codeSQL = "INSERT INTO `sharemywash`.`WMACHINES` (`id`, `Belong`, `Capacity`, `Space`) VALUES (NULL, '$belong', '$available', '$capacity', '$space');";
+        public function addWMachines($belong,$available,$capacity,$space){
+            $codeSQL = "INSERT INTO `sharemywash`.`WMACHINES` (`id`, `Belong`, `Available`,`Capacity`, `Space`) VALUES (NULL, '$belong', '$available', '$capacity', '$space');";
             $req = mysql_query($codeSQL);
         }
 
