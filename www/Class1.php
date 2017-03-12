@@ -9,11 +9,14 @@ header( 'content-type: text/html; charset=utf-8' );
  * @author Math
  */
 
-
+include("Connexion.php");
+include("Opp.php");
 class Class1
 {
+
     public static function l($lp,$pa,$nomDePage)
     {
+        
         if(isset($lp))
         {
             if($lp==$pa)
@@ -24,5 +27,6 @@ class Class1
         else
             echo utf8_decode($nomDePage);
     }
-    
+
 }
+?>
