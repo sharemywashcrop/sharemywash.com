@@ -63,7 +63,7 @@ header( 'content-type: text/html; charset=utf-8' );
     
         <div class="container 75%">
             <div class="row 200%">
-                <div class=""><!--6u 12u$(medium)"-->
+                <div class="6u 12u$(medium)">
                     <header class="major">
                         <h2>Useful adresses:</h2>
                     </header>
