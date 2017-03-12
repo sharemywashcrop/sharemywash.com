@@ -62,7 +62,7 @@ header( 'content-type: text/html; charset=utf-8' );
 
         <div class="container 75%">
             <div class="row 200%">
-                <div class="6u 12u$(medium)">
+                <div class="">
                     <header class="major">
                         <h2>How to use application</h2>
                     </header>
