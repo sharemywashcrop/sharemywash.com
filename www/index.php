@@ -65,7 +65,7 @@ header( 'content-type: text/html; charset=utf-8' );
                 <div class="6u 12u$(medium)">
                     <header class="major">
                         <h2>Share My Wash</h2>
-                        <p>A good way to wash his laundry</p>
+                        <p>The good way to do the laundry</p>
                     </header>
                 </div>
                 <div id="map" class="6u$ 12u$(medium)">
