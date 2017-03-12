@@ -72,10 +72,10 @@ header( 'content-type: text/html; charset=utf-8' );
                         <div id='map'></div>
                             <script>
                                     mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
-                                    var map = new mapboxgl.Map({
+                                   var map = new mapboxgl.Map({
                                                                     container: 'map', // container id
                                                                     style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-                                                                    center: [51.75, 1.27], // starting position
+                                                                    center: [-74.50, 40], // starting position
                                                                     zoom: 9 // starting zoom
                                                                 });
                             </script>
