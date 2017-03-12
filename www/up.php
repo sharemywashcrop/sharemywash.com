@@ -1,3 +1,4 @@
 <?php
-echo exec('git pull')."\n";
+
+echo exec('sudo -u dotty git pull')."\n";
 ?>
