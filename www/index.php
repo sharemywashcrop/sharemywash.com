@@ -38,7 +38,7 @@ $test->add("Jean-Jacques","jj@jeanjacques.com","Quelquepart","La","aze","aze");
 
     <!-- Banner -->
     <section id="banner">
-        <h2>Share My Wash</h2>
+        <h2>Share My Wash 2</h2>
         
         <p></p>
         <p>by Ultra Team</p>
