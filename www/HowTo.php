@@ -41,8 +41,7 @@ header( 'content-type: text/html; charset=utf-8' );
             <div class="row 200%">
                 <div class="6u 12u$(medium)">
                     <header class="major">
-                        <h2>What is it ?</h2>
-                        <p>New user</p>
+                        <h2>New User</h2>
                     </header>
                 </div>
 
@@ -65,8 +64,7 @@ header( 'content-type: text/html; charset=utf-8' );
             <div class="row 200%">
                 <div class="6u 12u$(medium)">
                     <header class="major">
-                        <h2>What is it ?</h2>
-                        <p>How to use application</p>
+                        <h2>How to use application</h2>
                     </header>
                 </div>
 
