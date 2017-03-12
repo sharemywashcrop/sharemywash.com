@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <?php
+include("UsersOpp.php");
 header( 'content-type: text/html; charset=utf-8' );
+
+$test = new UsersOpp();
+$test->add("Jean-Jacques","jj@jeanjacques.com","Quelquepart","La","aze","aze");
 ?>
 <html>
 <head>
@@ -26,7 +30,7 @@ header( 'content-type: text/html; charset=utf-8' );
         <img src="image/telechargement.jpg" />
         <h1>
             <strong>
-                <a href="index.html">Share My Wash</a>
+                <a href="index.php">Share My Wash</a>
             </strong>
         </h1>
         <?php include"Table.php"?>

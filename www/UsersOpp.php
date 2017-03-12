@@ -1,9 +1,10 @@
 <?php
-include ("Connexion.php");
+
 
 
 namespace
 {
+    include ("Connexion.php");
     class UsersOPP{
         private $name;
         private $email;
@@ -16,17 +17,27 @@ namespace
 
 
 
-        public function UsersOpp($name,$email,$location,$current,$dryer,$wMachine){
-            $this -> $name = $name;
+        public function UsersOpp(/*$name,$email,$location,$current,$dryer,$wMachine*/){
+          /*  $this -> $name = $name;
             $this -> $email = $email;
             $this -> $loacation = $location;
             $this -> $current = $current;
             $this -> $dryer = $dryer;
-            $this -> $wMachine = $cwMachine;
+            $this -> $wMachine = $cwMachine;  */
         }
 
-        public function upDate($var){
-            $this -> $var = $var;
+
+
+        public function add($name,$email,$location,$current,$dryer,$wMachine){
+            $this -> $connexion = new Connexion("198.100.148.10","sharemywash","sharemywash","epitaepita");
+            $this -> $codeSQL = "INSERT INTO USERS(Name, Email, Location, CurrentLaudry, Dryer, WMachine) VALUES('$name', '$email', '$location', '$current', '$dryer', '$wMachine')";
+            $connexion -> execute($codeSQL);
+        }
+
+        public function upDate($name,$cln,$var){
+            $this -> $connexion = new Connexion("198.100.148.10","sharemywash","sharemywash","epitaepita");
+            $this -> $codeSQL = "UPDATE USERS FROM USERS SET ".$cln." = ".$var." WHERE Name = ".$name;
+            $connexion -> execute($codeSQL);
         }
 
         public function delete($cln,$var){
@@ -35,11 +46,7 @@ namespace
             $connexion -> execute($codeSQL);
         }
 
-        public function add($newUSers){
-            $this -> $connexion = new Connexion("198.100.148.10","sharemywash","sharemywash","epitaepita");
-            $this -> $codeSQL = "ADD FROM USERS WHERE ".$cln." = ".$var;
-            $connexion -> execute($codeSQL);
-        }
+
     }
 }
 
