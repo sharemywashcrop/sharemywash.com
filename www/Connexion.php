@@ -15,11 +15,7 @@ namespace
         private $server;
         private $login;
         private $pass;
-        private $codeSQL = "CREATE TABLE Members(
-                            id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                            name VARCHAR(20)
-                            email VARCHAR(40)
-                            )";
+        private $codeSQL;
         private $dbName;
         private $connexion;
 
@@ -38,6 +34,7 @@ namespace
             {
                 echo $e->getMessage;
             }
+            
         }
 
         public function exucuteCode($codeSQL)
@@ -67,6 +64,10 @@ namespace
             {
                 echo $e->getMessage;
             }
+        }
+
+        public function setCodeSQL($newCodeSQL){
+            $this -> codeSQL = $newCodeSQL;
         }
 	}
 }
