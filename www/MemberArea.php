@@ -34,15 +34,6 @@ header( 'content-type: text/html; charset=utf-8' );
         <?php include"Table.php"?>
     </header>
 
-    <!-- Banner -->
-
-    <section id="banner">
-
-        <h2>Share My Wash 2</h2>
-
-        <p></p>
-        <p>by Ultra Team</p>
-    </section>
 
     <!-- One -->
     <section id="one" class="wrapper style1">
@@ -54,6 +45,8 @@ header( 'content-type: text/html; charset=utf-8' );
 
             #map {
                 position: page;
+                top: 0;
+                bottom: 0;
                 width: 100%;
             }
         </style>
