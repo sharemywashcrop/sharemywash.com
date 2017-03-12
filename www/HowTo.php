@@ -60,7 +60,7 @@ header( 'content-type: text/html; charset=utf-8' );
     <section id="two" class="wrapper style2">
 
 
-        <div class="container 100%">
+        <div class="container 75%">
             <div class="row 200%">
                 <div class="6u 12u$(medium)">
                     <header class="major">
