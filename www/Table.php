@@ -43,7 +43,7 @@
             </a>
         </li>
         <li>
-            <a href="admin_MemberArea.php?lp=8">
+            <a href="MemberArea.php?lp=8">
                 <?php Class1::l($_GET[lp],8,"Member area") ?>
             </a>
         </li>
