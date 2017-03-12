@@ -34,7 +34,15 @@ header( 'content-type: text/html; charset=utf-8' );
         <?php include"Table.php"?>
     </header>
 
+    <!-- Banner -->
 
+    <section id="banner">
+
+        <h2>Share My Wash 2</h2>
+
+        <p></p>
+        <p>by Ultra Team</p>
+    </section>
     
         <style>
             body {
@@ -44,7 +52,7 @@ header( 'content-type: text/html; charset=utf-8' );
 
             #map {
                 position: absolute;
-                top: 20%;
+                top: 30%;
                 left: 0;
                 right:30%;
                 bottom: 0;
