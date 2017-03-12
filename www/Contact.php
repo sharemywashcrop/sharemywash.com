@@ -42,7 +42,7 @@ header( 'content-type: text/html; charset=utf-8' );
                 <div class="6u 12u$(medium)">
                     <header class="major">
                         <h2>What is it ?</h2>
-                        <p>Wash Revolution Incoming</p>
+                        <p>Want to contact us?</p>
                     </header>
                 </div>
 
@@ -51,14 +51,7 @@ header( 'content-type: text/html; charset=utf-8' );
 
                 <div></div>
                 <p>
-                    You are a student. You have to do your laundry. But your washing machine is not filled entirely? Do not worry about this anymore!
-                    <br />
-                    With
-                    <b>Share My Wash</b>, you are now abble to share your washing machine! Like this you can save a washing machine for other, but you can also share the fees.
-                    <br />
-                    Moreover, it is a way to socialize with others and maybe discover some interresting people!
-                    <br />
-                    You are a business man. You have a coffee spot on your sleeve and you have to clean it before your meeting? However, you have only this clothe to wash and you think that it is a waste of water to use it only for one thing? Share My Wash is there to help you and find someone with whom you can wash your sleeve!
+		Any questions, any requests, you are welcome to ask us! If you want, you are able to give us some feedback, we will be grateful for it. 
                 </p>
 
             </div>
@@ -73,7 +66,7 @@ header( 'content-type: text/html; charset=utf-8' );
                 <div class="6u 12u$(medium)">
                     <header class="major">
                         <h2>What is it ?</h2>
-                        <p>Wash Revolution Incoming</p>
+                        <p>How to contact us</p>
                     </header>
                 </div>
 
@@ -82,14 +75,10 @@ header( 'content-type: text/html; charset=utf-8' );
 
                 <div></div>
                 <p>
-                    You are a student. You have to do your laundry. But your washing machine is not filled entirely? Do not worry about this anymore!
-                    <br />
-                    With
-                    <b>Share My Wash</b>, you are now abble to share your washing machine! Like this you can save a washing machine for other, but you can also share the fees.
-                    <br />
-                    Moreover, it is a way to socialize with others and maybe discover some interresting people!
-                    <br />
-                    You are a business man. You have a coffee spot on your sleeve and you have to clean it before your meeting? However, you have only this clothe to wash and you think that it is a waste of water to use it only for one thing? Share My Wash is there to help you and find someone with whom you can wash your sleeve!
+		Here are some adress mails to contact us easily:<br />
+		Mathieu Ghirlanda: 16108802@brookes.ac.uk<br />
+		Victoria Guehennec: 16108795@brookes.ac.uk<br />
+		Thomas Michelot: 16108858@brookes.ac.uk<br />
                 </p>
 
             </div>

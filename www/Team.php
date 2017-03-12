@@ -1,4 +1,4 @@
-!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <?php
 header( 'content-type: text/html; charset=utf-8' );
 ?>
@@ -42,7 +42,7 @@ header( 'content-type: text/html; charset=utf-8' );
                 <div class="6u 12u$(medium)">
                     <header class="major">
                         <h2>What is it ?</h2>
-                        <p>Wash Revolution Incoming</p>
+                        <p>The team behind this project</p>
                     </header>
                 </div>
 
@@ -51,14 +51,7 @@ header( 'content-type: text/html; charset=utf-8' );
 
                 <div></div>
                 <p>
-                    You are a student. You have to do your laundry. But your washing machine is not filled entirely? Do not worry about this anymore!
-                    <br />
-                    With
-                    <b>Share My Wash</b>, you are now abble to share your washing machine! Like this you can save a washing machine for other, but you can also share the fees.
-                    <br />
-                    Moreover, it is a way to socialize with others and maybe discover some interresting people!
-                    <br />
-                    You are a business man. You have a coffee spot on your sleeve and you have to clean it before your meeting? However, you have only this clothe to wash and you think that it is a waste of water to use it only for one thing? Share My Wash is there to help you and find someone with whom you can wash your sleeve!
+		The team behind this project is composed of three computer engineering student. We have made this project during the hack@brookes hackathon, are we are proud to present you what we have done so far. We hope that it will be helpful for you when doing your laundry.<br />
                 </p>
 
             </div>
@@ -73,7 +66,7 @@ header( 'content-type: text/html; charset=utf-8' );
                 <div class="6u 12u$(medium)">
                     <header class="major">
                         <h2>What is it ?</h2>
-                        <p>Wash Revolution Incoming</p>
+                        <p></p>
                     </header>
                 </div>
 
@@ -82,14 +75,6 @@ header( 'content-type: text/html; charset=utf-8' );
 
                 <div></div>
                 <p>
-                    You are a student. You have to do your laundry. But your washing machine is not filled entirely? Do not worry about this anymore!
-                    <br />
-                    With
-                    <b>Share My Wash</b>, you are now abble to share your washing machine! Like this you can save a washing machine for other, but you can also share the fees.
-                    <br />
-                    Moreover, it is a way to socialize with others and maybe discover some interresting people!
-                    <br />
-                    You are a business man. You have a coffee spot on your sleeve and you have to clean it before your meeting? However, you have only this clothe to wash and you think that it is a waste of water to use it only for one thing? Share My Wash is there to help you and find someone with whom you can wash your sleeve!
                 </p>
 
             </div>
