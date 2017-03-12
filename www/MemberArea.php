@@ -45,21 +45,15 @@ header( 'content-type: text/html; charset=utf-8' );
 
             #map {
                 position: absolute;
-                top: 50%;
+                top: 20%;
                 left: 0;
-                right:25%;
+                right:30%;
                 bottom: 0;
-                width: 80%;
+                width: 90%;
             }
         </style>
         <div class="container 75%">
             <div class="row 200%">
-                <div class="6u 12u$(medium)">
-                    <header class="major">
-                        <h2>Share My Wash</h2>
-                        <p>A good way to wash his laundry</p>
-                    </header>
-                </div>
                 <div id="map" class="6u$ 12u$(medium)">
 
 
