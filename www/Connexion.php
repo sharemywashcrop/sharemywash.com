@@ -68,6 +68,7 @@ namespace
         }
 
         public function addUser($name,$email,$location,$current,$dryer,$wMachine){
+            $connexion = $this -> $connexion;
             $requete = $connexion->prepare("INSERT INTO USERS(Name, Email, Location, CurrentLaudry, Dryer, WMachine) VALUES(:name', :email, :location, :current, :dryer, :wMachine)");
             $requete-> bindParam(':name',$name);
             $requete-> bindParam(':email',$email);
@@ -75,11 +76,12 @@ namespace
             $requete-> bindParam(':current',$current);
             $requete-> bindParam(':dryer',$dryer);
             $requete-> bindParam(':wMachine',$wMachine);
-           
+
             $requete -> execute();
         }
 
         public function upDateUser($name,$cln,$var){
+            $connexion = $this -> $connexion;
             $requete = $connexion -> prepare("UPDATE USERS FROM USERS SET :cln = :var WHERE Name = :name");
             $requete -> bindParam(':cln',$cln);
             $requete -> bindParam(':var',$var);
@@ -88,6 +90,7 @@ namespace
         }
 
         public function deleteUser($cln,$var){
+            $connexion = $this -> $connexion;
             $requete = $connexion -> prepare("DELETE FROM USERS WHERE :cln = :var");
             $requete -> bindParam(':cln',$cln);
             $requete -> bindParam(':var',$var);
