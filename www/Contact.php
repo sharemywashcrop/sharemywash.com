@@ -66,7 +66,6 @@ header( 'content-type: text/html; charset=utf-8' );
                 <div class=""><!--6u 12u$(medium)"-->
                     <header class="major">
                         <h2>Useful adresses:</h2>
-                        <p></p>
                     </header>
                 </div>
 
