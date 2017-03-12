@@ -36,8 +36,7 @@ include("Connexion.php");
     </header>
 
 
-    <!-- One -->
-    <section id="one" class="wrapper style1">
+   
         <style>
             body {
                 margin: 0;
@@ -54,12 +53,6 @@ include("Connexion.php");
         </style>
         <div class="container 75%">
             <div class="row 200%">
-                <div class="6u 12u$(medium)">
-                    <header class="major">
-                        <h2>Share My Wash</h2>
-                        <p>A good way to wash his laundry</p>
-                    </header>
-                </div>
                 <div id="map" class="6u$ 12u$(medium)">
 
 
@@ -105,13 +98,9 @@ include("Connexion.php");
                 });
                         </script>
                     </div>
-                    <p>
-                        Bla bla bla
-                    </p>
                 </div>
             </div>
         </div>
-    </section>
                         <!-- Footer -->
                         <?php include"Foot.php" ?>
 </body>
