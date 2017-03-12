@@ -34,7 +34,17 @@
         </li>
         <li>
             <a href="admin_mod.php?lp=6">
-                <?php Class1::l($_GET[lp],6,"Member area") ?>
+                <?php Class1::l($_GET[lp],6,"Users") ?>
+            </a>
+        </li>
+        <li>
+            <a href="admin_add_laundry.php?lp=7">
+                <?php Class1::l($_GET[lp],7,"Laundry") ?>
+            </a>
+        </li>
+        <li>
+            <a href="admin_MemberArea.php?lp=8">
+                <?php Class1::l($_GET[lp],8,"Member area") ?>
             </a>
         </li>
     </ul>

@@ -35,7 +35,7 @@ include('Opp.php');
     </nav>
 </header>
 <?php
-if (isset($_REQUEST['name']) && $_REQUEST['name'] != "" && isset($_REQUEST['email']) && $_REQUEST['email'] != "" ){
+if (isset($_REQUEST['belong']) && $_REQUEST['belong'] != "" ){
     // On récupère les information
     $belong = mysql_real_escape_string($_REQUEST['belong']);
     $available = mysql_real_escape_string($_REQUEST['available']);
