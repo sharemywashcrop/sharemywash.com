@@ -34,9 +34,16 @@ header( 'content-type: text/html; charset=utf-8' );
         <?php include"Table.php"?>
     </header>
 
+    <!-- Banner -->
 
-    <!-- One -->
-    <section id="one" class="wrapper style1">
+    <section id="banner">
+
+        <h2>Share My Wash 2</h2>
+
+        <p></p>
+        <p>by Ultra Team</p>
+    </section>
+    
         <style>
             body {
                 margin: 0;
@@ -45,21 +52,15 @@ header( 'content-type: text/html; charset=utf-8' );
 
             #map {
                 position: absolute;
-                top: 25%;
+                top: 30%;
                 left: 0;
-                right:25%;
+                right:30%;
                 bottom: 0;
-                width: 100%;
+                width: 90%;
             }
         </style>
         <div class="container 75%">
             <div class="row 200%">
-                <div class="6u 12u$(medium)">
-                    <header class="major">
-                        <h2>Share My Wash</h2>
-                        <p>A good way to wash his laundry</p>
-                    </header>
-                </div>
                 <div id="map" class="6u$ 12u$(medium)">
 
 
@@ -111,7 +112,6 @@ header( 'content-type: text/html; charset=utf-8' );
                 </div>
             </div>
         </div>
-    </section>
  
     <!-- Footer -->
     <?php include"Foot.php" ?>
