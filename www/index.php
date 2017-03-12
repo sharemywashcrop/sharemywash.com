@@ -75,7 +75,7 @@ header( 'content-type: text/html; charset=utf-8' );
                                     var map = new mapboxgl.Map({
                                                                     container: 'map', // container id
                                                                     style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-                                                                    center: [51.75, -1.27], // starting position
+                                                                    center: [51.75, 1.27], // starting position
                                                                     zoom: 9 // starting zoom
                                                                 });
                             </script>
