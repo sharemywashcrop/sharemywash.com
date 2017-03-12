@@ -26,7 +26,7 @@ namespace
             $this -> pass = $newPass;
             $this -> server = $newServer;
             $this -> dbName = $newdbName;
-            
+
 
             mysql_connect($newServer,$newLogin,$newPass);
             $this->$connexion = $connexionReussie = mysql_select_db($newdbName);
@@ -46,8 +46,8 @@ namespace
         }
 
         public function add($name,$email,$location,$current,$dryer,$wMachine){
-            $this -> $codeSQL = "INSERT INTO 'sharemywash'.'USERS'('Name', 'Email', 'Location', 'CurrentLaudry', 'Dryer', 'WMachine') VALUES('$name', '$email', '$location', '$current', '$dryer', '$wMachine');";
-            $req = mysql_query($this->$codeSQL);
+            $codeSQL = "INSERT INTO `sharemywash`.`USERS` (`id`, `Name`, `Email`, `Location`, `CurentLaundry`, `Dryer`, `WMachine`) VALUES (NULL, '$name', '$email', '$location', '$current', '$dryer', '$wMachine');";
+            $req = mysql_query($codeSQL);
         }
 
         public function upDate($name,$cln,$var){
