@@ -29,7 +29,6 @@ namespace
             try{
                 $newConnexion = new PDO("mysql:host=$newServer;dbname=$newdbName",$newLogin,$newPass);
                 $newConnexion -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                echo "ok";
                 $this ->connexion = $newConnexion;
             }
             catch(PDOException $e)
