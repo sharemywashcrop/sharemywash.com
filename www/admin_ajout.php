@@ -33,14 +33,16 @@ if (isset($_REQUEST['name']) && $_REQUEST['name'] != "" && isset($_REQUEST['emai
     $email = mysql_real_escape_string($_REQUEST['email']);
     $location = mysql_real_escape_string(($_REQUEST['location']));
     $email = mysql_real_escape_string($_REQUEST['email']);
-        $current = mysql_real_escape_string($_REQUEST['current']);
-        $dryer = mysql_real_escape_string($_REQUEST['dryer']);
-        $wmachine = mysql_real_escape_string($_REQUEST['wmachine']);
+    $current = mysql_real_escape_string($_REQUEST['current']);
+    $dryer = mysql_real_escape_string($_REQUEST['dryer']);
+    $wMachine = mysql_real_escape_string($_REQUEST['wmachine']);
     // Date definie automatiquement
     $date = date("Y-m-d");
     // Insertion dans la table ANNONCES
     $opp = new Opp();
-    $opp->addUser($name,$email,$location,$current,$dryer,$wmachine);
+    $opp->addUser($name,$email,$location,$current,$dryer,$wMachine);
+    $codeSQL = "INSERT INTO `sharemywash`.`USERS` (`id`, `Name`, `Email`, `Location`, `CurentLaundry`, `Dryer`, `WMachine`) VALUES (NULL, `$name`, `$email`, `$location`, `$current`, `$dryer`, `$wMachine`);";
+    $req = mysql_query($codeSQL);
 ?>
 <script>
     alert("Annonce créée");
@@ -63,10 +65,10 @@ if (isset($_REQUEST['name']) && $_REQUEST['name'] != "" && isset($_REQUEST['emai
                 <input type="text" name="email" placeholder="email" />
                 <input type="text" name="location" placeholder="location" />
                 <input type="text" name="current" placeholder="current" />
-                <input type="text" name="dryer" placeholder="dryer" />
-                <input type="text" name="wmachine" placeholder="Wash Machine"/>*
+                <input type="number" name="dryer" placeholder="dryer" />
+                <input type="number" name="wmachine" placeholder="Wash Machine"/>*
                 <input type="submit" value="Add" />
-            </p>
+            
         </form>
     </div>
 </section>
