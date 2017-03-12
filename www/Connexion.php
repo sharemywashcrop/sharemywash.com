@@ -69,7 +69,7 @@ namespace
 
         public function addUser($name,$email,$location,$current,$dryer,$wMachine){
             $connexion = $this -> $connexion;
-            $requete = $connexion->prepare("INSERT INTO USERS(Name, Email, Location, CurrentLaudry, Dryer, WMachine) VALUES(:name', :email, :location, :current, :dryer, :wMachine)");
+            $requete = $connexion->prepare("INSERT INTO 'sharemywash'.'USERS'('Name', 'Email', 'Location', 'CurrentLaudry', 'Dryer', 'WMachine') VALUES(':name', ':email', ':location', ':current', ':dryer', ':wMachine')");
             $requete-> bindParam(':name',$name);
             $requete-> bindParam(':email',$email);
             $requete-> bindParam(':loacation',$location);
