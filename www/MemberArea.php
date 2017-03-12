@@ -35,8 +35,7 @@ header( 'content-type: text/html; charset=utf-8' );
     </header>
 
 
-    <!-- One -->
-    <section class="wrapper style3">
+    
         <style>
             body {
                 margin: 0;
@@ -105,7 +104,6 @@ header( 'content-type: text/html; charset=utf-8' );
                 </div>
             </div>
         </div>
-    </section>
  
     <!-- Footer -->
     <?php include"Foot.php" ?>
