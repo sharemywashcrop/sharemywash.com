@@ -36,7 +36,7 @@ header( 'content-type: text/html; charset=utf-8' );
 
 
     <!-- One -->
-    <section id="one" class="wrapper style1">
+    <section class="wrapper style3">
         <style>
             body {
                 margin: 0;
