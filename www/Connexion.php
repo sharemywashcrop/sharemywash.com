@@ -75,6 +75,7 @@ namespace
             $requete-> bindParam(':current',$current);
             $requete-> bindParam(':dryer',$dryer);
             $requete-> bindParam(':wMachine',$wMachine);
+           
             $requete -> execute();
         }
 
