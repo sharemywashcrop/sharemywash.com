@@ -42,7 +42,7 @@ if (isset($_REQUEST['name']) && $_REQUEST['name'] != "" && isset($_REQUEST['emai
     $capacity = mysql_real_escape_string($_REQUEST['capacity']);
     $space = mysql_real_escape_string($_REQUEST['space']);
     $opp = new Opp();
-    $opp->addWMachines($belong,$available,$capacity,$space);
+    $opp->addDMachines($belong,$available,$capacity,$space);
 ?>
 <script>
     alert("Done");

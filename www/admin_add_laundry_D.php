@@ -23,10 +23,10 @@ include('Opp.php');
     <nav id="nav">
         <ul>
             <li>
-                <a href="admin_ajout.php">Add </a>
+                <a href="admin_add_laundry_W.php">Whasing Machine</a>
             </li>
             <li>
-                <a href="admin_suppression.php">Delete</a>
+                <a href="admin_add_laundry_D.php">Dryer</a>
             </li>
             <li>
                 <a href="index.php">Back</a>

@@ -32,7 +32,7 @@ include('Opp.php');
 <section id="two" class="wrapper style2 special">
     <div class="container">
         <header class="major">
-            <h2>Add/Delete laundry</h2>
+            <h2>Add/Delete users</h2>
         </header>
         <ul class="actions">
             <li><a href="admin_ajout.php" class="button big">Add</a></li>
