@@ -1,7 +1,7 @@
 <?php
 mysql_connect("198.100.148.10","sharemywash","epitaepita");
 $connexionReussie = mysql_select_db("sharemywash");
-echo "ok";
+
 /*
 public function add($name,$email,$location,$current,$dryer,$wMachine){
 $codeSQL = "INSERT INTO `sharemywash`.`USERS` (`id`, `Name`, `Email`, `Location`, `CurentLaundry`, `Dryer`, `WMachine`) VALUES (NULL, '$name', '$email', '$location', '$current', '$dryer', '$wMachine');";
