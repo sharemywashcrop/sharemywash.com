@@ -1,5 +1,5 @@
 <?php
-include('Connexion.php');
+include('Opp.php');
 ?>
 <!-------------------------------------Scripts/CSS----------------------------------------->
 <head>
@@ -39,6 +39,8 @@ if (isset($_REQUEST['name']) && $_REQUEST['name'] != "" && isset($_REQUEST['emai
     // Date definie automatiquement
     $date = date("Y-m-d");
     // Insertion dans la table ANNONCES
+    $opp = new Opp();
+    $opp->addUser($name,$email,$location,$current,$dryer,$wMachine);
     $codeSQL = "INSERT INTO `sharemywash`.`USERS` (`id`, `Name`, `Email`, `Location`, `CurentLaundry`, `Dryer`, `WMachine`) VALUES (NULL, `$name`, `$email`, `$location`, `$current`, `$dryer`, `$wMachine`);";
     $req = mysql_query($codeSQL);
 ?>
