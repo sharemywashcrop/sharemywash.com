@@ -61,7 +61,6 @@ header( 'content-type: text/html; charset=utf-8' );
                                 margin: 0;
                                 padding: 0;
                             }
-
                             #map {
                                 position: absolute;
                                 top: 0;
@@ -70,18 +69,18 @@ header( 'content-type: text/html; charset=utf-8' );
                             }
                         </style>
 
-                            <div id='map'></div>
+                        <div id='map'></div>
                             <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
-var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-    center: [-74.50, 40], // starting position
-    zoom: 9 // starting zoom
-});
+                                    mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
+                                    var map = new mapboxgl.Map({
+                                                                    container: 'map', // container id
+                                                                    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
+                                                                    center: [51.75, -1.274280], // starting position
+                                                                    zoom: 9 // starting zoom
+                                                                });
                             </script>
                             Bla bla bla
-</p>
+                    </p>
                 </div>
             </div>
         </div>
