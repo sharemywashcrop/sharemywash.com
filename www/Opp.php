@@ -5,7 +5,7 @@ namespace{
 
         /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
         public function addUser($name,$email,$location,$current,$dryer,$wMachine){
-            $codeSQL = "INSERT INTO `sharemywash`.`USERS` (`id`, `Name`, `Email`, `Location`, `CurentLaundry`, `Dryer`, `WMachine`) VALUES (NULL, `$name`, `$email`, `$location`, `$current`, `$dryer`, `$wMachine`);";
+            $codeSQL = "INSERT INTO `sharemywash`.`USERS` (`id`, `Name`, `Email`, `Location`, `CurentLaundry`, `Dryer`, `WMachine`) VALUES (NULL, '$name', '$email', '$locatio', '$current', '$dryer', '$wMachine');";
             $req = mysql_query($codeSQL);
         }
 
