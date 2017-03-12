@@ -35,7 +35,7 @@ namespace
             {
                 echo $e->getMessage;
             }
-            
+
         }
 
         public function exucuteCode($codeSQL)
@@ -65,6 +65,32 @@ namespace
             {
                 echo $e->getMessage;
             }
+        }
+
+        public function addUser($name,$email,$location,$current,$dryer,$wMachine){
+            $requete = $connexion->prepare("INSERT INTO USERS(Name, Email, Location, CurrentLaudry, Dryer, WMachine) VALUES(:name', :email, :location, :current, :dryer, :wMachine)");
+            $requete-> bindParam(':name',$name);
+            $requete-> bindParam(':email',$email);
+            $requete-> bindParam(':loacation',$location);
+            $requete-> bindParam(':current',$current);
+            $requete-> bindParam(':dryer',$dryer);
+            $requete-> bindParam(':wMachine',$wMachine);
+            $requete -> execute();
+        }
+
+        public function upDateUser($name,$cln,$var){
+            $requete = $connexion -> prepare("UPDATE USERS FROM USERS SET :cln = :var WHERE Name = :name");
+            $requete -> bindParam(':cln',$cln);
+            $requete -> bindParam(':var',$var);
+            $requete -> bindParam(':name',$name);
+            $requete -> execute();
+        }
+
+        public function deleteUser($cln,$var){
+            $requete = $connexion -> prepare("DELETE FROM USERS WHERE :cln = :var");
+            $requete -> bindParam(':cln',$cln);
+            $requete -> bindParam(':var',$var);
+            $requete -> execute();
         }
 
         public function setCodeSQL($newCodeSQL){
