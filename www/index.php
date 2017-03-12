@@ -54,8 +54,34 @@ header( 'content-type: text/html; charset=utf-8' );
                 </div>
                 <div class="6u$ 12u$(medium)">
                     <p>
-                        Bla bla bla
-                    </p>
+                        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js'></script>
+                        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css' rel='stylesheet' />
+                        <style>
+                            body {
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                            #map {
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                width: 100%;
+                            }
+                        </style>
+
+                            <div id='map'></div>
+                            <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
+    center: [-74.50, 40], // starting position
+    zoom: 9 // starting zoom
+});
+                            </script>
+                            Bla bla bla
+</p>
                 </div>
             </div>
         </div>
