@@ -47,7 +47,7 @@ if (isset($_REQUEST['belong']) && $_REQUEST['belong'] != "" ){
 <script>
     alert("Done");
 </script>
-<meta http-equiv="refresh" content="0; URL=admin_mod.php" />
+<meta http-equiv="refresh" content="0; URL=admin_add_laundry.php" />
 <?php
 }else {
 ?>

@@ -44,10 +44,10 @@ include('Opp.php');
         </header>
         <ul class="actions">
             <li>
-                <a href="admin_ajout_laundry_W.php" class="button big">Add a Washing Machine</a>
+                <a href="admin_add_laundry_W.php" class="button big">Add a Washing Machine</a>
             </li>
             <li>
-                <a href="admin_ajout_laundry_D.php" class="button special big">Add a Dryer</a>
+                <a href="admin_add_laundry_D.php" class="button special big">Add a Dryer</a>
             </li>
         </ul>
     </div>
