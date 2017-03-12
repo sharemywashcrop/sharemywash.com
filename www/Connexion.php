@@ -29,8 +29,7 @@ namespace
 
 
             mysql_connect($newServer,$newLogin,$newPass);
-            $connexionReussie = mysql_select_db($newdbName);
-            $this->$connexion = $connexionReussie;
+            $this->$connexion = $connexionReussie = mysql_select_db($newdbName);
 
         }
 
