@@ -44,7 +44,7 @@ header( 'content-type: text/html; charset=utf-8' );
             }
 
             #map {
-                position: page;
+                position: relative;
                 top: 0;
                 bottom: 0;
                 width: 100%;

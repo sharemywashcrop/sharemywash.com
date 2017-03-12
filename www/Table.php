@@ -3,7 +3,9 @@
     include"Class1.php";
 ?>         
 <!--English version-->
+
 <nav id="nav">
+    
     <ul>
         <li>
             <a href="index.php?lp=1">
@@ -31,7 +33,7 @@
             </a>
         </li>
         <li>
-            <a href="Admin.php?lp=6">
+            <a href="admin_mod.php?lp=6">
                 <?php Class1::l($_GET[lp],6,"Member area") ?>
             </a>
         </li>
