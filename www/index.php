@@ -1,10 +1,8 @@
 <!DOCTYPE HTML>
 <?php
-include("UsersOpp.php");
+
 header( 'content-type: text/html; charset=utf-8' );
 
-$test = new UsersOpp();
-$test->add("Jean-Jacques","jj@jeanjacques.com","Quelquepart","La","aze","aze");
 ?>
 <html>
 <head>
