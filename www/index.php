@@ -18,15 +18,14 @@ header( 'content-type: text/html; charset=utf-8' );
         <link rel="stylesheet" href="css/skel.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-xlarge.css" />
-        
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css' rel='stylesheet' />
     </noscript>
 </head>
 <body class="landing">
-
+    
     <!-- Header -->
     <header id="header" class="alt">
-        <img src="image/telechargement.jpg" />
+        
         <h1>
             <strong>
                 <a href="index.php">Share My Wash</a>
@@ -36,7 +35,9 @@ header( 'content-type: text/html; charset=utf-8' );
     </header>
 
     <!-- Banner -->
+    
     <section id="banner">
+
         <h2>Share My Wash 2</h2>
 
         <p></p>
@@ -120,12 +121,12 @@ header( 'content-type: text/html; charset=utf-8' );
        </div> 
     </section>
     <!-- Two -->
-    <section id="one" class="wrapper style1">
+    <section id="two" class="wrapper style2">
         <div class="container 75%">
             <div class="row 200%">
                 <div class="6u 12u$(medium)">
                     <header class="major">
-                        <h2>Share My Wash</h2>
+                        <h2>What is it ?</h2>
                         <p>A good way to wash his laundry</p>
                     </header>
                     </div>
