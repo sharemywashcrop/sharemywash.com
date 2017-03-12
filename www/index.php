@@ -76,7 +76,7 @@ header( 'content-type: text/html; charset=utf-8' );
                                                                     container: 'map', // container id
                                                                     style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
                                                                     center: [-1.224972, 51.754297], // starting position
-                                                                    zoom: 5 // starting zoom
+                                                                    zoom: 10 // starting zoom
                                                                 });
                             </script>
                             Bla bla bla
