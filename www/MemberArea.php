@@ -36,7 +36,7 @@ include("Connexion.php");
     </header>
 
 
-   
+    <section>
         <style>
             body {
                 margin: 0;
@@ -59,48 +59,49 @@ include("Connexion.php");
 
                     <div>
                         <script>
-                mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
-                var map = new mapboxgl.Map({
-                    container: 'map',
-                    style: 'mapbox://styles/mapbox/streets-v9',
-                    center: [-1.224972, 51.754297],
-                    zoom: 12
-                });
+                            mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
+                            var map = new mapboxgl.Map({
+                                container: 'map',
+                                style: 'mapbox://styles/mapbox/streets-v9',
+                                center: [-1.224972, 51.754297],
+                                zoom: 12
+                            });
 
-                var radius = 20;
+                            var radius = 20;
 
-                function pointOnCircle() {
-                    return {
-                        "type": "Point",
-                        "coordinates": [
-                         -1.224972,
-                         51.754297
-                        ]
-                    };
-                }
+                            function pointOnCircle() {
+                                return {
+                                    "type": "Point",
+                                    "coordinates": [
+                                     -1.224972,
+                                     51.754297
+                                    ]
+                                };
+                            }
 
-                map.on('load', function () {
+                            map.on('load', function () {
 
-                    map.addSource('point', {
-                        "type": "geojson",
-                        "data": pointOnCircle()
-                    });
+                                map.addSource('point', {
+                                    "type": "geojson",
+                                    "data": pointOnCircle()
+                                });
 
-                    map.addLayer({
-                        "id": "point",
-                        "source": "point",
-                        "type": "circle",
-                        "paint": {
-                            "circle-radius": 5,
-                            "circle-color": "#ff0000"
-                        }
-                    });
-                });
+                                map.addLayer({
+                                    "id": "point",
+                                    "source": "point",
+                                    "type": "circle",
+                                    "paint": {
+                                        "circle-radius": 5,
+                                        "circle-color": "#ff0000"
+                                    }
+                                });
+                            });
                         </script>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
                         <!-- Footer -->
                         <?php include"Foot.php" ?>
 </body>
