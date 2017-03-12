@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <?php
-
 header( 'content-type: text/html; charset=utf-8' );
-
 ?>
 <html>
 <head>
@@ -15,10 +13,13 @@ header( 'content-type: text/html; charset=utf-8' );
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js'></script>
     <noscript>
         <link rel="stylesheet" href="css/skel.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/style-xlarge.css" />
+        
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css' rel='stylesheet' />
     </noscript>
 </head>
 <body class="landing">
@@ -37,13 +38,27 @@ header( 'content-type: text/html; charset=utf-8' );
     <!-- Banner -->
     <section id="banner">
         <h2>Share My Wash 2</h2>
-        
+
         <p></p>
         <p>by Ultra Team</p>
     </section>
 
     <!-- One -->
     <section id="one" class="wrapper style1">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            #map {
+                position: static;
+                top: 51%;
+                bottom: 100%;
+                height: 35%;
+                width: 40%;
+            }
+        </style>
         <div class="container 75%">
             <div class="row 200%">
                 <div class="6u 12u$(medium)">
@@ -52,41 +67,78 @@ header( 'content-type: text/html; charset=utf-8' );
                         <p>A good way to wash his laundry</p>
                     </header>
                 </div>
-                <div class="6u$ 12u$(medium)">
-                    <p>
-                        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js'></script>
-                        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css' rel='stylesheet' />
-                        <style>
-                            body {
-                                margin: 0;
-                                padding: 0;
-                            }
-                            #map {
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                width: 100%;
-                            }
-                        </style>
+                <div id="map" class="6u$ 12u$(medium)">
 
-                        <div id='map'></div>
-                            <script>
-                                    mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
-                                   var map = new mapboxgl.Map({
-                                                                    container: 'map', // container id
-                                                                    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-                                                                    center: [-1.224972, 51.754297], // starting position
-                                                                    zoom: 10 // starting zoom
-                                                                });
-                            </script>
-                            Bla bla bla
+
+
+                    <div>
+                        <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoidWx0cmFlIiwiYSI6ImNqMDZiampoeDAwYWczM3AwMDc0MHRmaWMifQ.U0L3mZQ0BjC8e39irDppsQ';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v9',
+                    center: [-1.224972, 51.754297],
+                    zoom: 12
+                });
+
+                var radius = 20;
+
+                function pointOnCircle() {
+                    return {
+                        "type": "Point",
+                        "coordinates": [
+                         -1.224972,
+                         51.754297
+                        ]
+                    };
+                }
+
+                map.on('load', function () {
+
+                    map.addSource('point', {
+                        "type": "geojson",
+                        "data": pointOnCircle()
+                    });
+
+                    map.addLayer({
+                        "id": "point",
+                        "source": "point",
+                        "type": "circle",
+                        "paint": {
+                            "circle-radius": 5,
+                            "circle-color": "#ff0000"
+                        }
+                    });
+                });
+                        </script>
+                    </div>
+                    <p>
+                        Bla bla bla
                     </p>
                 </div>
             </div>
-        </div>
+       </div> 
     </section>
+    <!-- Two -->
+    <section id="one" class="wrapper style1">
+        <div class="container 75%">
+            <div class="row 200%">
+                <div class="6u 12u$(medium)">
+                    <header class="major">
+                        <h2>Share My Wash</h2>
+                        <p>A good way to wash his laundry</p>
+                    </header>
+                    </div>
+                </div>
+                    <div class="6u$ 12u$(medium)">
+                        <p>
+                            blablablablablabla
+                        </p>
 
-    <!-- Footer -->
-    <?php include"Foot.php" ?>
+                        </div>
+            </div>
+        </section>
+                        <!-- Footer -->
+                        <?php include"Foot.php" ?>
 </body>
 </html>
