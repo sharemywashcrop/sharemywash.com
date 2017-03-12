@@ -45,11 +45,11 @@ header( 'content-type: text/html; charset=utf-8' );
 
             #map {
                 position: absolute;
-                top: 0;
+                top: 50%;
                 left: 0;
-                right:20%;
+                right:25%;
                 bottom: 0;
-                width: 100%;
+                width: 80%;
             }
         </style>
         <div class="container 75%">
